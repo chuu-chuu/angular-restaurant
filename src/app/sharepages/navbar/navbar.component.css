@@ -1,0 +1,18 @@
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 400;
+    color: var(--font-color);
+}
+.navbar-light .navbar-nav .nav-link.active-link {
+    color: var(--primary-color);
+    
+}
+
+.navigation {
+    padding: 20px 0;
+    background-color: var(--secondary-color);
+}
+
+.logo {
+    max-width: 100%;
+    width: 100px;
+}

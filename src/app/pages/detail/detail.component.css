@@ -1,0 +1,28 @@
+.detail {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.detail h2{
+    margin-bottom: 45px;
+    font-weight: 700;
+}
+.detail h2 span{
+    color: var(--primary-color);
+    
+}
+.detail img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+}
+.detail h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: var(--font-color);
+}
+.detail h4 {
+    color: var(--font-color);
+}

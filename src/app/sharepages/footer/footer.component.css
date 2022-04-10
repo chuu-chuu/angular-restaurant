@@ -1,0 +1,30 @@
+footer {
+    background: var(--secondary-color);
+    padding: 50px 0;
+}
+.footer-logo img{
+    max-width: 100%;
+    width: 120px;
+}
+
+.footer-menu {
+    margin: 40px 0;
+}
+.footer-menu a,
+.footer-social-link a {
+    color: var(--font-color);
+    font-weight: 400;
+    padding-right: 40px;
+}
+.footer-menu a:last-child,
+.footer-social-link a:last-child {
+    padding-right: 0;
+}
+
+.footer-menu a.active-link {
+    color: var(--primary-color);
+}
+footer a:hover {
+    color: var(--primary-color);
+    transition: 0.4s ease;
+}

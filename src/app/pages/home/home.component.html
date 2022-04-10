@@ -1,0 +1,61 @@
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <h2>We Serve Only The Taste You Love</h2>
+                <p>A good restaurant is like a vacation; it transports you, and it becomes a lot more than just about the food.</p>
+                <a href="#" class="text-center">Order Now <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <img src="../../assets/images/dots.png" alt="">
+            <img src="../../assets/images/banner1.png" alt="">
+            <img src="../../assets/images/banner2.png" alt="">
+            <img src="../../assets/images/wave.png" alt="">
+            <img src="../../assets/images/wave.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="steps">
+    <h2 class="text-center">How To Get <span>Fresh Food</span></h2>
+    <div class="container">
+        <div class="step text-center" *ngFor="let homestep of homeSteps">
+            <h1>{{homestep.stepsLevel}}</h1>
+            <img src="{{homestep.stepsImg}}" alt="">
+            <p>{{homestep.stepsText}}</p>
+        </div>
+        <!-- <div class="step text-center">
+            <h1>1</h1>
+            <img src="../../assets/images/food.png" alt="">
+            <p>Select Food</p>
+        </div>
+        <div class="step text-center">
+            <h1>2</h1>
+            <img src="../../assets/images/data.png" alt="">
+            <p>Fill Your Data</p>
+        </div>
+        <div class="step text-center">
+            <h1>3</h1>
+            <img src="../../assets/images/delivery.png" alt="">
+            <p>We Deliver in minute</p>
+        </div> -->
+        
+    </div>
+</div>
+<div class="lists">
+    
+    <div class="container">
+        <h2 class="text-center">Customers' <span>Favourite Food</span></h2>
+        <div class="row">
+            <div class="col-lg-3" *ngFor="let foodData of foodDatas;index as i">
+                <a [routerLink]="['/menu',foodData.id]"  class="list" *ngIf="i<=3">
+                    <img src="{{foodData.foodImg}}" alt="">
+                    <h5>{{foodData.foodName}}</h5>
+                    <h4>$ {{foodData.foodPrice}}</h4>
+                </a>
+            </div>
+        </div>
+        <div class="row  text-center">
+            <a routerLink="menu" class="viewmore-btn">View More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        
+    </div>
+</div>
